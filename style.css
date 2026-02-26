@@ -1,0 +1,252 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("DADA.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* ================= NAVBAR ================= */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: rgba(0,0,0,0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2{
+    color: #F5C518;
+    font-size: 22px;
+}
+
+/* NAV LINKS */
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links{
+    list-style: none;
+    display: inline-flex;
+    gap: 35px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.nav-links a:hover{
+    color: #F5C518;
+}
+
+/* SIGN-IN BUTTON */
+.btn{
+    background-color: red;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: darkred;
+}
+
+/* HERO */
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h3{
+    color: #F5C518;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* TRENDING MOVIES */
+.trending{
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.trending h2{
+    color: #F5C518;
+    margin-bottom: 30px;
+}
+
+.movie-row{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.movie-card{
+    text-align: center;
+}
+
+.movie-card{
+    text-align: center;
+}
+
+.movie{
+    width: 180px;      /* fixed width */
+    height: 270px;     /* fixed height */
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover; /* keeps aspect ratio and crops if needed */
+}
+
+.movie:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.movie-card p{
+    margin-top: 8px;
+    font-size: 16px;
+    color: #F5C518;
+}
+
+/* OWNER SECTION */
+.owner{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.owner h2{
+    margin-bottom: 40px;
+    color: #F5C518;
+}
+
+.owner-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    transition: 0.3s;
+}
+
+.owner-card:hover{
+    transform: translateY(-8px);
+}
+
+.profile{
+    width: 220px;
+    border-radius: 20px;
+}
+
+.owner-text{
+    max-width: 500px;
+    text-align: left;
+}
+
+.owner-text h3{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.owner-text p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #E5E7EB;
+}
+
+/* CONTACT SECTION */
+.contact{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+    color: #F5C518;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.contact-info i{
+    color: #F5C518;
+    font-size: 22px;
+}
+
+.contact-info p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(0,0,0,0.9);
+    margin-top: 40px;
+}
+
+footer p{
+    font-size: 18px;
+}
