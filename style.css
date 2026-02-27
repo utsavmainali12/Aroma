@@ -1,11 +1,11 @@
-/* RESET */
+/* ================= RESET ================= */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* ================= BODY ================= */
 body{
     font-family: Arial, sans-serif;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("DADA.png");
@@ -90,7 +90,7 @@ nav{
     background-color: darkred;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero{
     text-align: center;
     padding: 100px 20px;
@@ -111,7 +111,7 @@ nav{
     color: #E5E7EB;
 }
 
-/* TRENDING MOVIES */
+/* ================= TRENDING MOVIES ================= */
 .trending{
     text-align: center;
     padding: 70px 20px;
@@ -133,17 +133,13 @@ nav{
     text-align: center;
 }
 
-.movie-card{
-    text-align: center;
-}
-
 .movie{
-    width: 180px;      /* fixed width */
-    height: 270px;     /* fixed height */
+    width: 180px;      
+    height: 270px;     
     border-radius: 12px;
     transition: 0.3s;
     cursor: pointer;
-    object-fit: cover; /* keeps aspect ratio and crops if needed */
+    object-fit: cover; 
 }
 
 .movie:hover{
@@ -157,7 +153,77 @@ nav{
     color: #F5C518;
 }
 
-/* OWNER SECTION */
+/* ================= MORE MOVIES SECTION ================= */
+.more-movies {
+    display: none;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.more-movies h2{
+    color: #F5C518;
+    margin-bottom: 30px;
+}
+
+/* Show More Movies when checkbox is checked */
+#more-toggle:checked ~ .more-movies {
+    display: block;
+}
+
+/* More Movies Button */
+.more-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, red, orange);
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.more-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255,0,0,0.7);
+}
+
+/* Movie Grid for More Movies */
+.more-movies .movie-row{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.more-movies .movie-card{
+    text-align: center;
+}
+
+.more-movies .movie-card img{
+    width: 180px;     
+    height: 270px;
+    border-radius: 12px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.more-movies .movie-card img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+.more-movies .movie-card p{
+    margin-top: 8px;
+    font-size: 16px;
+    color: #F5C518;
+}
+
+/* ================= OWNER SECTION ================= */
 .owner{
     padding: 80px 20px;
     text-align: center;
@@ -208,7 +274,7 @@ nav{
     color: #E5E7EB;
 }
 
-/* CONTACT SECTION */
+/* ================= CONTACT SECTION ================= */
 .contact{
     padding: 70px 20px;
     text-align: center;
@@ -239,7 +305,7 @@ nav{
     gap: 10px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer{
     text-align: center;
     padding: 25px;
